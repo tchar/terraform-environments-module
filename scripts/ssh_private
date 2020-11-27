@@ -1,0 +1,3 @@
+ssh -o ProxyCommand="ssh -o 'IdentitiesOnly yes' -i keys/ec2_pub_rsa -W %h:%p ubuntu@$1" \
+    -o 'IdentitiesOnly yes' -o 'UserKnownHostsFile /dev/null' \
+    -i keys/ec2_priv_rsa ubuntu@10.0.2.50

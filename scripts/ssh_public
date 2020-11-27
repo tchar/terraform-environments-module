@@ -1,0 +1,2 @@
+ssh -o 'IdentitiesOnly yes' -o 'UserKnownHostsFile /dev/null' \
+    -i keys/ec2_pub_rsa ubuntu@$1
